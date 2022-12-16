@@ -21,7 +21,7 @@ async function app(yargsInput) {
             title: yargsInput.title, 
             actor: yargsInput.actor, 
             director: yargsInput.director, 
-            rating: yargsInput.rating});
+            rating: yargsInput.rating}, yargsInput.title);
     } else if (yargsInput.delete) {
         //put code to delete a movie here
         await deleteMovie(yargsInput.title);
